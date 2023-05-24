@@ -5,4 +5,5 @@
     <string name="create_bday_card">create_bday_card</string>
     <string name="name2">Name</string>
     <string name="enterthename">Enter The Name</string>
+    <string name="age">Age</string>
 </resources>
