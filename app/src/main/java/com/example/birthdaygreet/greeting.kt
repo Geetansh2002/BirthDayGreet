@@ -10,7 +10,7 @@ class greeting : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_greeting)
         val name=intent.getStringExtra("name")
-        val age=intent.getStringExtra("age")
+        val age=intent.getStringExtra("agee")
 
         val text=findViewById<TextView>(R.id.message)
         text.text="Happy $age BirthDay $name"
