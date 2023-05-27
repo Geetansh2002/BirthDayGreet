@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
 import android.widget.EditText
+import android.widget.Toast
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -12,10 +13,9 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         val button =findViewById<Button>(R.id.button1)
-        val name2=findViewById<EditText>(R.id.name)
-        val age2=findViewById<EditText>(R.id.age)
-        val name=name2.text.toString()
-        val age=age2.text.toString()
+
+        val age=findViewById<EditText>(R.id.age).text.toString()
+        val name=findViewById<EditText>(R.id.name).text.toString()
 
 
         button.setOnClickListener{
