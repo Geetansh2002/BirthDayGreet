@@ -15,11 +15,12 @@ class MainActivity : AppCompatActivity() {
 
         val button =findViewById<Button>(R.id.button1)
 
-        val age=findViewById<EditText>(R.id.age).text.toString()
 
-        val name=findViewById<EditText>(R.id.name).editableText.toString()
 
         button.setOnClickListener{
+            val age=findViewById<EditText>(R.id.age).text.toString()
+
+            val name=findViewById<EditText>(R.id.name).editableText.toString()
             val intent=Intent(this,greeting::class.java)
             intent.putExtra("name",name)
             intent.putExtra("age", age)
